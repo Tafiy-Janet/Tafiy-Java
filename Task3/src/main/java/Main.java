@@ -36,7 +36,7 @@ public class Main {
             }
         }
         if (result.isEmpty()) {
-            System.out.println("Sorry, there are no such numbers.");
+            System.out.println("Sorry, there are no such numbers. Try again");
         } else {
             int[] convertedArray = result.stream().mapToInt(i -> i).toArray();
             print(convertedArray);

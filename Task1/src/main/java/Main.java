@@ -10,12 +10,10 @@ public class Main {
 
     public static void printHello() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число больше семи и я поприветствую Вас :) \nВведите 'break', чтобы выйти из программы.");
+        System.out.println("Введите число больше семи и я поприветствую Вас :)");
         while (true) {
             if (sc.hasNextInt() && sc.nextInt() > 7) {
                 System.out.println("Привет!");
-                break;
-            } else if (sc.hasNextLine() && sc.nextLine().equals("break")) {
                 break;
             } else {
                 sc.nextLine();
