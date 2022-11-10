@@ -12,13 +12,20 @@ public class Main {
     public static int[] fillInArray() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Let's find numbers multiple of 3. \nEnter the size of the array:");
-        int size = scanner.nextInt();
-        int[] array = new int[size];
-        generateArray(array);
-        System.out.print("Array before change: ");
-        print(array);
-        return array;
+        while (true) {
+            if (scanner.hasNextInt()) {
+                int size = scanner.nextInt();
+                int[] array = new int[size];
+                generateArray(array);
+                System.out.print("Array before change: ");
+                print(array);
+                return array;
+            } else {
+                scanner.nextLine();
+            }
+        }
     }
+
 
     public static void arrayResult(int[] array) {
         System.out.print("Array after change: ");

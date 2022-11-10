@@ -8,7 +8,7 @@ public class Main {
         System.in.read();
     }
 
-    public static void chooseVyacheslav()  {
+    public static void chooseVyacheslav() {
         System.out.println("Введите Ваше имя:");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine().trim();
@@ -18,6 +18,4 @@ public class Main {
             System.out.println("Такого имени, к сожалению, нет.");
         }
     }
-
-
 }
